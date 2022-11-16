@@ -4,6 +4,7 @@
 
 .card {
   // scss-docs-start card-css-vars
+
   --#{$prefix}card-spacer-y: #{$card-spacer-y};
   --#{$prefix}card-spacer-x: #{$card-spacer-x};
   --#{$prefix}card-title-spacer-y: #{$card-title-spacer-y};
@@ -22,7 +23,16 @@
   --#{$prefix}card-img-overlay-padding: #{$card-img-overlay-padding};
   --#{$prefix}card-group-margin: #{$card-group-margin};
   // scss-docs-end card-css-vars
-
+  @extend .bg-dark;
+  p{
+    @extend .text-white;
+  }
+  a{
+    @extend .text-white;
+  }
+  h5{
+    @extend .text-purple;
+  }
   position: relative;
   display: flex;
   flex-direction: column;
